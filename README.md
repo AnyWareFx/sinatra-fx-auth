@@ -1,6 +1,6 @@
-# Sinatra::FxAuth
+# Sinatra::Fx::Auth
 
-Sinatra::FxAuth is a RESTful Authentication and Role-based Authorization extension for Sinatra.
+Sinatra::Fx::Auth is a RESTful Authentication and Role-based Authorization extension for Sinatra.
 No sessions or cookies required.
 
 
@@ -27,7 +27,7 @@ require 'sinatra/base'
 require 'sinatra/fx-auth'
 
 class MyApp < Sinatra::Base
-  register Sinatra::FxAuth
+  register Sinatra::Fx::Auth
 
   # Accessible by all
   get '/products' do
