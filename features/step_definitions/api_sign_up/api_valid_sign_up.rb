@@ -7,7 +7,7 @@ When /^the App signs me up with valid credentials$/ do
           :pass_phrase => "password"
       }
   }
-  @client = Rack::Test::Session.new Rack::MockSession.new AuthFx::App
+  @client = Rack::Test::Session.new Rack::MockSession.new Test::App
   @client.post '/profiles/', credentials
 end
 

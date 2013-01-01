@@ -6,7 +6,7 @@ When /^the App tries to sign me on with invalid credentials$/ do
           :pass_phrase => "bad-password"
       }
   }
-  @client = Rack::Test::Session.new Rack::MockSession.new AuthFx::App
+  @client = Rack::Test::Session.new Rack::MockSession.new Test::App
   @client.post '/profiles/' + @user.id.to_s + '/key', credentials
 end
 

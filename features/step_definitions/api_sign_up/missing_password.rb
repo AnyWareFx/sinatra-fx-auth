@@ -7,7 +7,7 @@ When /^the App tries to sign me up with a missing password$/ do
           :pass_phrase => ""
       }
   }
-  @client = Rack::Test::Session.new Rack::MockSession.new AuthFx::App
+  @client = Rack::Test::Session.new Rack::MockSession.new Test::App
   @client.post '/profiles/', credentials
 end
 

@@ -34,11 +34,7 @@ module Sinatra
           token   = request.env['HTTP_X_AUTH_TOKEN']
           unless token.nil?
             passkey = Auth::PassKey.first :token => token
-            if passkey and passkey.user_profile.in_role? :admin # :admin takes precedence over :user
-              profile = passkey.user_profile
-            else
-              profile = Auth::UserProfile.get params[:id]
-            end
+            profile = passkey.user_profile if passkey
           end
           return profile, token
         end
