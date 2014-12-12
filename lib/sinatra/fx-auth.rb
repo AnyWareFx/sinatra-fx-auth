@@ -192,7 +192,7 @@ module Sinatra
 
 
         # Sign Off
-        app.delete '/profiles/:id/key', :auth => [:admin, :user] do
+        app.delete '/profiles/:id/key/?', :auth => [:admin, :user] do
           profile = find_user
           profile.sign_off
         end

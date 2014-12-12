@@ -60,7 +60,7 @@ Feature: API Sign On
     Given I have a User Profile
     When  the App signs me on with valid credentials
     And   the App signs me on with valid credentials
-    Then  the App receives a 201 response code
+    Then  the App receives a 200 response code
     And   the App receives an Auth Token
 #    And   I am online
 
@@ -71,6 +71,5 @@ Feature: API Sign On
     Given I have a User Profile
     When  the App signs me on with valid credentials
     And   the App tries to sign me on with invalid credentials
-    Then  the App receives a 201 response code
-    And   the App receives an Auth Token
+    Then  the App receives a 401 response code
 #    And   I am online
