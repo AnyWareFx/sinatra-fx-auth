@@ -7,14 +7,15 @@ require 'sinatra/version'
 
 
 Gem::Specification.new do |gem|
-  gem.name        = "sinatra-fx-auth"
+  gem.name        = 'sinatra-fx-auth'
   gem.version     = Sinatra::Fx::Auth::VERSION
+  gem.license     = 'MIT'
 
-  gem.authors     = ["Dave Jackson"]
+  gem.authors     = ['Dave Jackson']
   gem.email       = %w(dave.jackson@anywarefx.com)
   gem.description = %q{Sinatra::Fx::Auth - RESTful Authentication with Role-based Authorization for Sinatra}
   gem.summary     = %q{Sinatra::Fx::Auth - RESTful Authentication with Role-based Authorization for Sinatra}
-  gem.homepage    = ""
+  gem.homepage    = 'https://github.com/AnyWareFx/sinatra-fx-auth'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
