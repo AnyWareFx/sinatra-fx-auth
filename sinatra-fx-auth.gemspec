@@ -13,8 +13,8 @@ Gem::Specification.new do |gem|
 
   gem.authors     = ['Dave Jackson']
   gem.email       = %w(dave.jackson@anywarefx.com)
-  gem.description = %q{Sinatra::Fx::Auth - RESTful Authentication with Role-based Authorization for Sinatra}
-  gem.summary     = %q{Sinatra::Fx::Auth - RESTful Authentication with Role-based Authorization for Sinatra}
+  gem.description = %q{Sinatra::Fx::Auth - Sinatra extension for RESTful Authentication with Role-based Authorization}
+  gem.summary     = %q{Sinatra::Fx::Auth - Sinatra extension for RESTful Authentication with Role-based Authorization}
   gem.homepage    = 'https://github.com/AnyWareFx/sinatra-fx-auth'
 
   gem.files         = `git ls-files`.split($/)
