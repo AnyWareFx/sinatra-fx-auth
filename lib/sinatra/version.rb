@@ -2,7 +2,7 @@ module Sinatra
   module Fx
 
     module Auth
-      VERSION = '0.1.3'
+      VERSION = '1.1.3'
     end
 
   end
